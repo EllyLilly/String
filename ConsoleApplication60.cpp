@@ -5,16 +5,23 @@
 #include <string> //для функции getline
 using namespace std;
 
-//Строки - string
-//Строки - не примитивный тип данных, а класс, кот обеспечивает 
-//верхнеуровневую работу с текстом
+const string LOGIN = "Lilly", PASSWORD = "qwerty";
 int main()
 {
-    //Сравнение строк
-    string str1 = "que", str2 = "que";
-
-    if (str1 == str2) {
-        cout << "Строки сравниваются по значению";
+    string login;
+    cout << "Enter login: "; cin >> login;
+    if (LOGIN == login) {
+        string password;
+        cout << "Enter password: "; cin >> password;
+        if (password == PASSWORD) {
+            cout << "Welcome!\n";
+    }
+    else {
+        cout << "Error, password no correct!\n";
+    }
+}
+    else {
+        cout << "Error, '" << login << "' is not exist\n";
     }
     
 }
