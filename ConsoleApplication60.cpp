@@ -10,7 +10,7 @@ using namespace std;
 //верхнеуровневую работу с текстом
 int main()
 {
-    string str;
+    
     //Строки взаимодействуют с cin и cout так же как и примитивные типы данных
     //Сколько угодно символов можно вводить. Очищать не надо.
     //Ввод заканчивается на пробеле - символ разделения слов
@@ -25,11 +25,11 @@ int main()
     )
     */
     //getchar()
-    string buffer;
+    /*string buffer;
     getline(cin, buffer);
-    cout << '!' << buffer << '!';
+    cout << '!' << buffer << '!';*/
 
-    {
+    /* {
         cout << "Enter your name: "; cin >> str;
         cout << "Welcome! " << str;
 
@@ -40,8 +40,21 @@ int main()
         string str1, str2;
         cin >> str1 >> str2;
         cout << '!' << str1 << '!' << str2 << '!' << endl;
-    }
+    }*/
+    //Строки - это массивы символов, значит можно применять индексацию
+    string str;
+    cout << "Enter word: "; cin >> str;
+    //Удаление второго и четвертого символа
+    cout << str[0] << ' ' << str[2] << ' ' << str[4] << endl;
 
+    //Можно проиндексироваться по всей строке, но для этого надо знать ее размер
+    //Чтобы узнать размер строки используем метод 'size'
+
+    cout << "Length '" << str << "'= " << str.size() << endl;
+
+    for (int i = 0; i < str.size(); ++i) {
+        cout << "[" << i << "]:\t" << str[i] << endl;
+    }
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
