@@ -1,11 +1,47 @@
 // ConsoleApplication60.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
 //
-
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
+#include <string> //для функции getline
+using namespace std;
 
+//Строки - string
+//Строки - не примитивный тип данных, а класс, кот обеспечивает 
+//верхнеуровневую работу с текстом
 int main()
 {
-    std::cout << "Hello World!\n";
+    string str;
+    //Строки взаимодействуют с cin и cout так же как и примитивные типы данных
+    //Сколько угодно символов можно вводить. Очищать не надо.
+    //Ввод заканчивается на пробеле - символ разделения слов
+    
+
+    //Если мы хотим ввести строку вместе с пробелом, то пользуемся функцией getline
+    /*
+    getline(
+        Поток ввода (десскриптор),
+        Строка
+        
+    )
+    */
+    //getchar()
+    string buffer;
+    getline(cin, buffer);
+    cout << '!' << buffer << '!';
+
+    {
+        cout << "Enter your name: "; cin >> str;
+        cout << "Welcome! " << str;
+
+        int a, b;
+        cin >> a >> b;
+        cout << a + b;
+
+        string str1, str2;
+        cin >> str1 >> str2;
+        cout << '!' << str1 << '!' << str2 << '!' << endl;
+    }
+
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
