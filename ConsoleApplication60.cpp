@@ -1,21 +1,13 @@
 // ConsoleApplication60.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
 //
-#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
-#include <string> //для функции getline
+
 using namespace std;
 
-//Строки - string
-//Строки - не примитивный тип данных, а класс, кот обеспечивает 
-//верхнеуровневую работу с текстом
+
 int main()
 {
-    //Сравнение строк
-    string str1 = "que", str2 = "que";
-
-    if (str1 == str2) {
-        cout << "Строки сравниваются по значению";
-    }
+   
     
 }
 
