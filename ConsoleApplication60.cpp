@@ -1,28 +1,13 @@
 // ConsoleApplication60.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
 //
-#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
-#include <string> //для функции getline
+
 using namespace std;
 
-const string LOGIN = "Lilly", PASSWORD = "qwerty";
+
 int main()
 {
-    string login;
-    cout << "Enter login: "; cin >> login;
-    if (LOGIN == login) {
-        string password;
-        cout << "Enter password: "; cin >> password;
-        if (password == PASSWORD) {
-            cout << "Welcome!\n";
-    }
-    else {
-        cout << "Error, password no correct!\n";
-    }
-}
-    else {
-        cout << "Error, '" << login << "' is not exist\n";
-    }
+   
     
 }
 
